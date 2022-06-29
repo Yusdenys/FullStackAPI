@@ -1,4 +1,5 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿using FullStackAPI.Models;
+using Microsoft.EntityFrameworkCore;
 
 namespace FullStackAPI.Data
 {
@@ -6,6 +7,11 @@ namespace FullStackAPI.Data
     {
         public FullStackDbContext(DbContextOptions options) : base(options)
         {
+
         }
+
+        public DbSet<Employee> Employees { get; set; }
+
+
     }
 }

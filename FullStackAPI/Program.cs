@@ -25,6 +25,9 @@ if (app.Environment.IsDevelopment())
 
 app.UseHttpsRedirection();
 
+/**Permite el acceso desde cualquier Header, cualquier Metodo y Origen**/
+app.UseCors(policy => policy.AllowAnyHeader().AllowAnyMethod().AllowAnyOrigin());
+
 app.UseAuthorization();
 
 app.MapControllers();
