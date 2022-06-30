@@ -1,4 +1,4 @@
-# Dapper tutorial
+# FullStackAPI
 FullStack project using .NET 6, Entity Framework and Angular 14
 
 ### Reference Documentation
